@@ -2,43 +2,40 @@
 
 int main()
 {
-	std::cout << "Digite o numero da operacao: " << '\n';
-	std::cout << "1 -> SOMA." << '\n';
-	std::cout << "2 -> SUBTRACAO." << '\n';
-	std::cout << "3 -> MULTIPLICACAO." << '\n';
-	std::cout << "4 -> DIVISAO." << '\n';
-	int operacao;
-	std::cin >> operacao;
-	if (operacao > 4) {
-		std::cout << "Operacao invalida.";
+	std::cout << "Type the operation number : " << '\n';
+	std::cout << "1 -> ADITION." << '\n';
+	std::cout << "2 -> SUBTRACTION." << '\n';
+	std::cout << "3 -> MULTIPLICATION." << '\n';
+	std::cout << "4 -> DIVISION." << '\n';
+	int operation;
+	std::cin >> operation;
+	if (operation > 4) {
+		std::cout << "Invalid operation.";
 	}
 	else {
-		std::cout << "Digite o primeiro valor." << '\n';
-		double valor1;
-		std::cin >> valor1;
-		std::cout << "Agora digite o segundo valor." << '\n';
-		double valor2;
-		std::cin >> valor2;
-		if (operacao == 1) {
-			double soma = valor1 + valor2;
-			std::cout << "O resultado da soma eh: " << soma << '\n';
+		std::cout << "Type the first operand." << '\n';
+		double value1;
+		std::cin >> value1;
+		std::cout << "Type the second operand." << '\n';
+		double value2;
+		std::cin >> value2;
+		if (operation == 1) {
+			double sum = value1 + value2;
+			std::cout << value1 << " + " << value2 << " = " << sum << '\n';
 		}
-		if (operacao == 2) {
-			double subtracao = valor1 - valor2;
-			std::cout << "O resultado da subtracao eh: " << subtracao << '\n';
+		if (operation == 2) {
+			double subtraction = value1 - value2;
+			std::cout << value1 << " - " << value2 <<" = " << subtraction << '\n';
 		}
-		if (operacao == 3) {
-			double multiplicacao = valor1 * valor2;
-			std::cout << "O resultado da multiplicacao eh: " << multiplicacao << '\n';
+		if (operation == 3) {
+			double multiplication = value1 * value2;
+			std::cout << value1 << " * " << value2 << " = " << multiplication << '\n';
 		}
-		if (operacao == 4) {
-			double divisao = valor1 / valor2;
-			std::cout << "O resultado da divisao eh: " << divisao << '\n';
+		if (operation == 4) {
+			double division = value1 / value2;
+			std::cout << value1 << " / " << value2 << " = " << division << '\n';
 		}
 
 	}
-	
-	
-
 	return 0;
 }
